@@ -1,14 +1,13 @@
 import { appState } from "../AppState.js";
-import { player } from "../Models/Player.js";
+import { Player } from "../Models/Player.js";
 
 
 class PlayerService {
 
     createCreature(creatureData) {
-      let newCreature = new Creature(playerData.name, playerData.score)
-      appState.players.push(newPlayer)
+        let newPlayer = new Creature(playerData.name, playerData.score)
+        appState.Players.push(newPlayer)
     }
-  
-  }
-  
-  export const playerService = new playerService()
+
+}
+export const playerService = new PlayerService()
