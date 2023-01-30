@@ -31,20 +31,11 @@
         <div class="col-12">
           <div class="row">
             <div class="col-12">
-              <form class="row mb-5" onsubmit="app.creaturesController.createCreature()">
-                <div class="col-12">Create a Creature 👹</div>
+              <form class="row mb-5" onsubmit="app.playerController.drawPlayer()">
+                <div class="col-12">ENTER NAME</div>
                 <div class="col-6">
-                  <label for="name">name</label>
-                  <!-- NOTE  -->
-                  <input class="form-control" type="text" name="name" id="name" placeholder="slade">
-                </div>
-                <div class="col-3">
-                  <label for="level">level</label>
-                  <input class="form-control" type="number" name="level" id="level" placeholder="1">
-                </div>
-                <div class="col-3">
-                  <label for="health">health</label>
-                  <input class="form-control" type="number" name="health" id="health" placeholder="25">
+
+                  <input class="form-control" type="text" name="name" id="name" placeholder="name">
                 </div>
                 <button class="btn btn-success">create</button>
               </form>
