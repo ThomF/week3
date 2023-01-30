@@ -10,9 +10,9 @@ class AppState extends EventEmitter {
   players = [new Player('J')];
 
 players = [
-  new Player('Slate Slabrock'),
-  new Player('Tim'),
-  new Player('Jeremy')
+  new Player('Chief'),
+  new Player('mick'),
+  new Player('tane')
 ]
 }
 
