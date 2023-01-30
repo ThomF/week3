@@ -13,6 +13,7 @@ export class Player {
         return `
     <div class="col-4 text-dark">
     <div class="card text-center selectable no-select">
+
         <h5>${this.name}</h5>
         
     </div>
