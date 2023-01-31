@@ -28,7 +28,7 @@ export class Player {
         <h5>${this.name}</h5>
         <button class="btn btn-success" onclick="app.playerController.addPlayer('${this.name}')"> + </button>
         <span id="point"> ${this.score}</span>
-        <button class="btn btn-danger" onclick="app.playerService.minusPlayer('${this.name}')"> - </button>
+        <button class="btn btn-danger" onclick="app.playerController.losePoint('${this.name}')"> - </button>
         
     </div>
     </div>

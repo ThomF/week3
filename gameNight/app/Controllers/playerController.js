@@ -39,14 +39,4 @@ export class PlayerController{
     }
 
 
-    btnPlus(){
-        let score = document.getElementById('point')
-
-        score.innerHTML = this.score + 1
-    }
-
-    btnMinus(){
-        let score = document.getElementById('point')
-        score.innerHTML = this.score -1
-    }
 }
