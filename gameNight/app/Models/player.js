@@ -26,7 +26,7 @@ export class Player {
     <div class="col-4 text-dark">
     <div class="card text-center selectable no-select">
         <h5>${this.name}</h5>
-        <button class="btn btn-success" onclick="app.playerController.addPlayer('${this.name}')"> + </button>
+        <button class="btn btn-success" onclick="app.playerController.addPoint('${this.name}')"> + </button>
         <span id="point"> ${this.score}</span>
         <button class="btn btn-danger" onclick="app.playerController.losePoint('${this.name}')"> - </button>
         
