@@ -1,5 +1,4 @@
 import { Player } from "./Models/Player.js";
-import { Value } from "./Models/Value.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 import { loadState } from "./Utils/Store.js"
@@ -28,3 +27,6 @@ export const appState = new Proxy(new AppState(), {
     return true
   }
 })
+
+
+console.log(appState.players)

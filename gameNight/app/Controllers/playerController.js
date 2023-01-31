@@ -19,13 +19,18 @@ export class PlayerController{
 
     createPlayer(){
         window.event.preventDefault()
-
         const form = window.event.target
-
         let playerData = getFormData(form)
         playerService.createPlayer(playerData)
         this.drawPlayer()
     }
+
+    losePoint(name) {
+        console.log('-1 ', name);
+        playerService.losePoint(name)
+        this.drawPlayer()
+    }
+    
 
     constructor() {
         console.log('constructor ran');
@@ -33,4 +38,15 @@ export class PlayerController{
         somethingElse()
     }
 
+
+    btnPlus(){
+        let score = document.getElementById('point')
+
+        score.innerHTML = this.score + 1
+    }
+
+    btnMinus(){
+        let score = document.getElementById('point')
+        score.innerHTML = this.score -1
+    }
 }
