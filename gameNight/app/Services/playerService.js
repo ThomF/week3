@@ -4,18 +4,19 @@ import { Player } from "../Models/Player.js";
 
 class PlayerService {
 
-    addPlayer(score) {
-        let player = appState.players.find(player => player.score == score)
+    addPlayer(name) {
+        let player = appState.players.find(player => player.name == name)
         console.log('1 score', player);
         // creature.health -= 1
-        Player.addPoint(+1)
+        Player.addPoint()
     }
 
     minusPlayer(name) {
-        let player = appState.players.find(player => player.score == score)
+        let player = appState.players.find(player => player.name == name)
         console.log('-1 score', player);
         // creature.health -= 1
-        Player.losePoint(-1)
+        Player.losePoint()
+        
     }
 
     createPlayer(playerData) {
@@ -24,4 +25,4 @@ class PlayerService {
     }
 
 }
-export const playerService = new PlayerService()
+export const playerService = new PlayerService

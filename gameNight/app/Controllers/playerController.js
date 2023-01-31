@@ -27,7 +27,7 @@ export class PlayerController{
 
     losePoint(name) {
         console.log('-1 ', name);
-        playerService.losePlayer(name)
+        playerService.minusPlayer(name)
         this.drawPlayer()
     }
     addPoint(name) {
